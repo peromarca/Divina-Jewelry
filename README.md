@@ -1,1 +1,0 @@
-# Divina-Jewelry
