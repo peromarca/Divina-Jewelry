@@ -1,6 +1,7 @@
+/* General Styles */
 body {
    font-family: Arial, sans-serif;
-   background-color: #f7cac9;
+   background-color: #dab2b2;
    /* Rosegold color */
    background-image: url('flowers.png');
    /* Background flowers image */
@@ -11,9 +12,14 @@ body {
    padding: 0;
 }
 
+/* Header Styles */
+header {
+   position: relative;
+}
+
 header .cover {
    text-align: center;
-   padding: 50px 20px;
+   padding: 10px 5px;
    background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -28,10 +34,51 @@ header .cover img {
    border-radius: 10px;
 }
 
+/* Navigation Styles */
+nav {
+   background-color: #5b313a;
+   text-align: center;
+   padding: 5px 0;
+   /* Maintain a thin padding for a slim appearance */
+   margin-bottom: 0;
+   /* Remove margin bottom to reduce space */
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+}
+
+nav ul li {
+   margin: 0 3px;
+   /* Minimal margin for a slim layout */
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+   padding: 5px 8px;
+   /* Reduced padding for a slimmer appearance */
+   display: inline-block;
+   font-size: 0.9em;
+   /* Slightly smaller font size */
+}
+
+nav ul li a:hover {
+   text-decoration: underline;
+}
+
+/* Section Styles */
 section {
-   padding: 50px 20px;
+   padding: 20px;
+   /* Adjusted padding */
    background-color: rgba(255, 255, 255, 0.8);
-   margin: 20px 0;
+   margin: 10px 0;
+   /* Adjusted margin */
 }
 
 section h2 {
@@ -40,6 +87,7 @@ section h2 {
    margin-bottom: 20px;
 }
 
+/* Product Grid Styles */
 .product-grid {
    display: flex;
    flex-wrap: wrap;
@@ -64,9 +112,10 @@ section h2 {
 }
 
 .product-card h3 {
-   color: #b76e79;
+   color: #a86a74;
 }
 
+/* Payment and Delivery Section Styles */
 section#payment-delivery,
 section#about-founder {
    max-width: 800px;
@@ -79,4 +128,46 @@ section#about-founder img {
    max-width: 100%;
    height: auto;
    border-radius: 10px;
+   border: 5px solid #ac8a4e;
+}
+
+/* Centered Description and Fancy Font in About Us Section */
+section#about-founder p {
+   text-align: center;
+   font-family: 'Parisienne', cursive;
+   /* Use a fancy font */
+   font-size: 0.8em;
+
+   /* Increase font size for readability */
+}
+
+/* Import Fancy Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Parisienne&display=swap');
+/* Responsive Design */
+@media (max-width: 768px) {
+   .product-grid {
+      flex-direction: column;
+      align-items: center;
+   }
+
+
+   .product-card {
+      width: 100%;
+      max-width: 300px;
+   }
+
+   header .cover h1 {
+      font-size: 2em;
+   }
+
+   nav ul {
+      /* Remove flex-direction for single row display */
+      flex-direction: row;
+   }
+
+   nav ul li {
+      margin: 0 5px;
+      /* Adjusted margin */
+   }
 }
