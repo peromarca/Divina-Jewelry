@@ -1,0 +1,82 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f7cac9;
+   /* Rosegold color */
+   background-image: url('flowers.png');
+   /* Background flowers image */
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+}
+
+header .cover {
+   text-align: center;
+   padding: 50px 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
+header .cover h1 {
+   font-size: 2.5em;
+   color: #b76e79;
+}
+
+header .cover img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+section {
+   padding: 50px 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   margin: 20px 0;
+}
+
+section h2 {
+   text-align: center;
+   color: #b76e79;
+   margin-bottom: 20px;
+}
+
+.product-grid {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+}
+
+.product-card {
+   background-color: #fff;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   width: 200px;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+
+.product-card h3 {
+   color: #b76e79;
+}
+
+section#payment-delivery,
+section#about-founder {
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+section#about-founder img {
+   display: block;
+   margin: 0 auto 20px;
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
